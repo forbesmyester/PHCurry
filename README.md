@@ -1,4 +1,4 @@
-# PHCurry - An implementatin of Curry similar to what is found in functional programming languages.
+# PHCurry - An implementation of Curry similar to what is found in functional programming languages.
 
 Currying is a concept from functional programming where you allow you a
 function that would normally need `n` arguments to be called with fewer 
