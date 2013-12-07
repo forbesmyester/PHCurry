@@ -53,7 +53,7 @@ Yes but you could have achieved this with:
     );
     ?>
     
-That is true, I would argue that the previous was better because it is broken up into smaller parts which could be more testable and because each little function is named after it's actually doing. PHCurry is still not proving to be __that__ useful though, but combining it with [PHChain](../phchain) so you can chain these tiny functions together you can take it a little further...
+That is true, I would argue that the previous was better because it is broken up into smaller parts which could be more testable and because each little function is named after it's actually doing. PHCurry is still not proving to be __that__ useful though, but combining it with [PHChain](https://github.com/forbesmyester/PHChain) so you can chain these tiny functions together you can take it a little further...
 
     <?php
     require_once 'phcurry.php';
