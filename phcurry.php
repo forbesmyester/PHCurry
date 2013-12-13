@@ -25,7 +25,7 @@
  * 
  * </code>
  *
- * @param $func The function to use.
+ * @param Function $func The function to use.
  * @return mixed Result of $func or a function when not enough arguments be supplied.
  */
 function PHCurry($func) { 
