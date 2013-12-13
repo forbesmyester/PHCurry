@@ -7,13 +7,13 @@ class PHCurryTest extends PHPUnit_Framework_TestCase
     public function testWillExecuteImmediatelyWithAllArguments()
     {
     	$this->assertEquals(
+    		6,
     		phcurry(
     			function($a, $b, $c) {
 		    		return $a * $b * $c;
     			},
     			1, 2, 3
-    		),
-    		6
+    		)
     	);
     }
     
@@ -25,8 +25,8 @@ class PHCurryTest extends PHPUnit_Framework_TestCase
 		$iKnowTheWidth = phcurry($volumeCalculator, 3);
 		$iKnowTheWidthAndHeight = $iKnowTheWidth(2);
     	$this->assertEquals(
-    		$iKnowTheWidthAndHeight(4),
-    		24
+    		24,
+    		$iKnowTheWidthAndHeight(4)
     	);
     }
     
@@ -36,8 +36,8 @@ class PHCurryTest extends PHPUnit_Framework_TestCase
 			return 1;
 		};
     	$this->assertEquals(
-    		phcurry($returnOne),
-    		1
+    		1,
+    		phcurry($returnOne)
     	);
     }
     
@@ -52,8 +52,8 @@ class PHCurryTest extends PHPUnit_Framework_TestCase
 			return $r;
 		};
     	$this->assertEquals(
-    		phcurry($seeExtraArgs, 1, 2, 3),
-    		6
+    		6,
+    		phcurry($seeExtraArgs, 1, 2, 3)
     	);
     }
     
